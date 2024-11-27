@@ -6,7 +6,7 @@
 */
 #include "architect.h"
 
-double **create_translation_matrix(double i, double j)
+double **translation_matrix(double i, double j)
 {
     double **matrix = create_matrix();
 

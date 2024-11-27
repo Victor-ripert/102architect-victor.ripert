@@ -4,7 +4,7 @@
 ** File description:
 ** create matrix and return pointer
 */
-#include  "architect.h"
+#include "architect.h"
 #include <stdio.h>
 #include <stdlib.h>
 

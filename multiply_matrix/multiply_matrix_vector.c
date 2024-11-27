@@ -4,18 +4,18 @@
 ** File description:
 ** create matrix and return pointer
 */
-#include  "architect.h"
+#include "architect.h"
 
-double **multiply_matrix_vector(double **matrix, double **vector)
+double **multiply_matrix_vector(double **m, double **v)
 {
     double x;
     double y;
     double third;
     double **result;
 
-    x = (matrix[0][0] * vector[0][0]) + (matrix[0][1] * vector[1][0]) + (matrix[0][2] * vector[2][0]);
-    y = (matrix[1][0] * vector[0][0]) + (matrix[1][1] * vector[1][0]) + (matrix[1][2] * vector[2][0]);
-    third = (matrix[2][0] * vector[0][0]) + (matrix[2][1] * vector[1][0]) + (matrix[2][2] * vector[2][0]);
+    x = (m[0][0] * v[0][0]) + (m[0][1] * v[1][0]) + (m[0][2] * v[2][0]);
+    y = (m[1][0] * v[0][0]) + (m[1][1] * v[1][0]) + (m[1][2] * v[2][0]);
+    third = (m[2][0] * v[0][0]) + (m[2][1] * v[1][0]) + (m[2][2] * v[2][0]);
     result = create_h_coor(x, y);
     result[2][0] = third;
     return result;

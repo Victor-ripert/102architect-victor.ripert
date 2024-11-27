@@ -7,7 +7,7 @@
 #include "architect.h"
 #include <math.h>
 
-double **create_rotation_matrix(double teta)
+double **rotation_matrix(double teta)
 {
     double **matrix = create_matrix();
     double teta_radiant = teta * (M_PI / 180);

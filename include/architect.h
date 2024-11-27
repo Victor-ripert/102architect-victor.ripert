@@ -9,13 +9,13 @@
     #define ARCHITECT_H
 int architect(int argc, char **argv);
 double **create_h_coor(double x, double y);
-double **create_translation_matrix(double i, double j);
+double **translation_matrix(double i, double j);
 void print_h_coor(double **coordinate);
-double **create_scaling_matrix(double m, double n);
+double **scaling_matrix(double m, double n);
 double **create_matrix(void);
 void print_matrix(double **matrix);
-double **create_rotation_matrix(double teta);
-double **create_reflection_matrix(double teta);
+double **rotation_matrix(double teta);
+double **reflection_matrix(double teta);
 double **multiply_matrix_vector(double **matrix, double **vector);
 double **multiply_matrix_matrix(double **first_matrix, double **second_matrix);
 void print_coor_final(double **coordinate, double **final_coordinate);

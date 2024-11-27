@@ -8,11 +8,11 @@
 SRC =	main.c	\
 	architect.c	\
 	create_matrix/create_h_coor.c	\
-	create_matrix/create_translation_matrix.c	\
+	create_matrix/translation_matrix.c	\
 	create_matrix/create_matrix.c	\
-	create_matrix/create_scaling_matrix.c	\
-	create_matrix/create_rotation_matrix.c	\
-	create_matrix/create_reflection_matrix.c	\
+	create_matrix/scaling_matrix.c	\
+	create_matrix/rotation_matrix.c	\
+	create_matrix/reflection_matrix.c	\
 	print_matrix/print_matrix.c	\
 	print_matrix/print_h_coor.c	\
 	print_matrix/print_coor_final.c	\

@@ -11,7 +11,8 @@
 int main(int argc, char **argv)
 {
     int result = architect(argc, argv);
-    if ( result == 84) {
+
+    if (result == 84) {
         printf("Error 84\n");
     }
     return result;
