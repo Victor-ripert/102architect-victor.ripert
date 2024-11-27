@@ -6,6 +6,7 @@
 ##
 
 SRC =	main.c	\
+	architect.c	\
 	create_matrix/create_h_coor.c	\
 	create_matrix/create_translation_matrix.c	\
 	create_matrix/create_matrix.c	\
@@ -24,7 +25,7 @@ SRC =	main.c	\
 	parsing/create_node.c	\
 	parsing/print_node.c
 
-NAME	=	bootstrap
+NAME	=	102architect
 
 CFLAGS += -g3 -iquote ./include
 

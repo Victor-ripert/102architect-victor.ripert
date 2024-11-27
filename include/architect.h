@@ -7,6 +7,7 @@
 
 #ifndef ARCHITECT_H
     #define ARCHITECT_H
+int architect(int argc, char **argv);
 double **create_h_coor(double x, double y);
 double **create_translation_matrix(double i, double j);
 void print_h_coor(double **coordinate);
