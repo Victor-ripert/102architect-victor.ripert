@@ -9,9 +9,6 @@
 void print_matrix(double **matrix)
 {
     for (int i = 0; i != 3; i++) {
-        for (int j = 0; j != 3; j++) {
-            printf("%5.2f ", matrix[i][j]);
-        }
-        printf("\n");
+        printf("%.2f\t%.2f\t%.2f\n", matrix[i][0], matrix[i][1], matrix[i][2]);
     }
 }
