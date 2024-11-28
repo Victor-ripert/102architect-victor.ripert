@@ -11,11 +11,18 @@
 int architect(int argc, char **argv)
 {
     double **final_matrix;
-    double **coordone = parsing_initial_vector(argc, argv);
+    double **coordone;
     double **final_coordone;
     node_transfo_t arguments = create_node();
 
+    coordone = parsing_initial_vector(argc, argv);
+    if (coordone == NULL) {
+        return 84;
+    }
     arguments = parsing_arg(argc, argv);
+    if (arguments == NULL) {
+        return 84;
+    }
     final_matrix = multiply_linked_list(arguments);
     print_matrix(final_matrix);
     final_coordone = multiply_matrix_vector(final_matrix, coordone);

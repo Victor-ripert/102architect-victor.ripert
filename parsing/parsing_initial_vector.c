@@ -11,7 +11,11 @@
 
 double **parsing_initial_vector(int argc, char **argv)
 {
-    double **coordone = create_h_coor(atof(argv[1]), atof(argv[2]));
+    double **coordone;
 
-    return coordone;
+    if (argc > 3) {
+        coordone = create_h_coor(atof(argv[1]), atof(argv[2]));
+        return coordone;
+    }
+    return NULL;
 }

@@ -20,6 +20,7 @@ SRC =	main.c	\
 	multiply_matrix/multiply_matrix_matrix.c	\
 	multiply_matrix/multiply_linked_list.c	\
 	parsing/parsing_arg.c	\
+	parsing/nb_arg.c	\
 	parsing/parsing_initial_vector.c	\
 	parsing/add_node.c	\
 	parsing/create_node.c	\
